@@ -24,7 +24,7 @@ class Encapsulation
 {
 	public static void main(String args[])
 	{
-		Bank obj = new Bank();
+		Encapsulation obj = new Encapsulation();
 		obj.deposit(1000);
 		System.out.println(obj.withDraw(5000));
 	}
