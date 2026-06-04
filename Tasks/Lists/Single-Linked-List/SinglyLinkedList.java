@@ -78,13 +78,30 @@ class SinglyLinkedList
         }
         currentNode.next=null;
     }
+    public void display()
+    {
+        Node currentNode=head;
+        System.out.println("Linked List:");
+        while(currentNode!=null)
+        {
+            System.out.print(currentNode.data+" ");
+            currentNode=currentNode.next;
+        }
+        System.out.println();
+    }
     public static void main(String args[])
 	{
 		SinglyLinkedList sl=new SinglyLinkedList();
         sl.insertBeginning(10);
+        sl.insertEnd(15);
         sl.insertEnd(20);
-        sl.insertAtPosition(15,1);
+        sl.insertAtPosition(25,3);
+        sl.insertAtPosition(30,4);
         sl.deleteAtBeginning();
+        sl.display();
+        sl.deleteAtEnd();
+        sl.display();
+
 	}
     
 }
