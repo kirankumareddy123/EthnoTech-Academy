@@ -2,7 +2,7 @@ public class EmployeeSalary
 {
     void calulateSalary()
     {
-        System.out.println("Employees Salary is:");
+        System.out.println("Employees Salaries:");
     }
     class Intern extends EmployeeSalary
     {
